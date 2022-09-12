@@ -1,0 +1,41 @@
+<!--
+    SENAC - TADS - Programação Web
+	Aula #02 - Introdução ao JavaScript
+	Objetivos deste código: Demonstrar JS em Páginas html
+	    "Interação com Usuário - Fazendo Cálculos"
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px;  }
+    </style>
+</head>
+<body>
+     <h1>Senac - TADS - PW - 2° Semestre </h1>
+    <h2>Aula #02 - Introdução ao JS</h2>
+	<h3>Fazendo Cálculos</h3>
+    <button onclick="calculadora()">Clique para calcular</button>
+    <section id="res">
+        <p>Atenção: O resultado será colocado aqui...</p>
+    </section>
+
+    <script>
+        // O que fica aqui fora vai executar automaticamente, SEMPRE que o site for carregado
+        window.alert('Seja bem-vindo(a) ao meu site!')
+        // Já a função calcular() só vai executar quando o usuário pressionar o botão
+        function calculadora() {
+            let n1 = Number(window.prompt('Digite um número: '))
+            let res = document.querySelector('section#res')
+
+            res.innerHTML = `<p>O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}!</p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+    SENAC - TADS - Programação Web
+	Aula #02 - Introdução ao JavaScript
+	Objetivos deste código: Demonstrar JS em Páginas html
+	    "Interação com Usuário - obtendo Dados"
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS</title>
+    <style>
+        body { font: 12pt Arial; }
+        button { font-size: 12pt; padding: 30px; }
+    </style>
+</head>
+<body>
+     <h1>Senac - TADS - PW - 2° Semestre </h1>
+    <h2>Aula #02 - Introdução ao JS</h2>
+	<h3>Tabalhando com Dados</h3>
+    <button onclick="iniciarInteracao()">Clique para começar</button>
+    <script>
+        function iniciarInteracao() {
+            let nome = window.prompt('Qual é o seu nome? ')
+            window.alert(`Olá, ${nome}! Bem vindo ao Curso PW do Senac!`)
+        }
+    </script>
+</body>
+</html>
